@@ -24,6 +24,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     rootView: LandmarkList()
                         .environmentObject(UserData())
                 )
+/*                window.rootViewController = UIHostingController(
+                    rootView: AnimalList()
+                        .environmentObject(AnimalFacade())
+                )
+*/                AnimalFacade()
                 self.window = window
                 window.makeKeyAndVisible()
             }
